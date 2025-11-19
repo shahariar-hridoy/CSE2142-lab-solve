@@ -5,6 +5,36 @@ import java.util.*;
 public class StudentList {
 	public static void main(String[] args) {
 
+		// 1️⃣ First: check if argument is provided
+    if (args.length == 0) {
+        System.out.println("Please provide a, r, ?, +, or c argument");
+        return;
+    }
+
+    // 2️⃣ Then: put the LOGIC HERE
+    String command = args[0];
+
+    if (command.equals("a")) {
+        // LIST ALL STUDENTS
+    }
+    else if (command.equals("r")) {
+        // RANDOM STUDENT
+    }
+    else if (command.startsWith("+")) {
+        // ADD STUDENT
+    }
+    else if (command.startsWith("?")) {
+        // SEARCH STUDENT
+    }
+    else if (command.equals("c")) {
+        // COUNT STUDENTS
+    }
+    else {
+        // INVALID COMMAND
+        System.out.println("Invalid argument! Use a, r, ?, +, or c");
+    }
+
+
 		// Check arguments
 		if (args[0].equals("a")) {
 			System.out.println("Loading data ...");
